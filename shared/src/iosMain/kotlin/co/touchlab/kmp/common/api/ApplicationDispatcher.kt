@@ -1,6 +1,5 @@
 package co.touchlab.kmp.common.api
 
-import io.ktor.client.HttpClient
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Runnable
 import platform.darwin.dispatch_async
@@ -20,4 +19,4 @@ internal class NsQueueDispatcher(
     }
 }
 
-actual fun createHttpClient(): HttpClient = HttpClient()
+//actual fun createHttpClient(): HttpClient = HttpClient()

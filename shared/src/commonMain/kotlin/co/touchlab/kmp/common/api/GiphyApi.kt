@@ -7,17 +7,20 @@ import io.ktor.client.request.get
 import io.ktor.client.request.header
 import io.ktor.client.request.url
 import io.ktor.http.Url
+import io.ktor.util.pipeline.PipelineExecutor
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 internal expect val ApplicationDispatcher: CoroutineDispatcher
 
-expect fun createHttpClient(): HttpClient
-
 class GiphyApi {
 
-    val client: HttpClient = createHttpClient()
+    val client: HttpClient = HttpClient {
+        install(JsonFeature) {
+            serializer = KotlinxSerializer()
+        }
+    }
     var address = "http://api.giphy.com/v1/gifs/search"
     var goodAddr = Url("$address?q=awesome")
     var evilAddr = Url("$address?q=redsox")

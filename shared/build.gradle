@@ -27,8 +27,8 @@ kotlin {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
                 implementation 'io.ktor:ktor-client-core:1.0.1'
                 implementation 'io.ktor:ktor-client-json:1.0.1'
-                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.1.0'
-                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0'
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.0.1'
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1'
                 implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.9.1'
             }
         }
@@ -56,7 +56,7 @@ kotlin {
         }
         iosMain {
             dependencies {
-                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.1.0'
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.0.1'
                 implementation 'io.ktor:ktor-client-ios:1.0.1'
                 implementation 'io.ktor:ktor-client-core-ios:1.0.1'
                 implementation 'io.ktor:ktor-client-json-ios:1.0.1'
@@ -71,3 +71,24 @@ kotlin {
 configurations {
     compileClasspath
 }
+
+task packForXCode(type: Sync) {
+    final File frameworkDir = new File(buildDir, "xcode-frameworks")
+    final String mode = project.findProperty("XCODE_CONFIGURATION")?.toUpperCase() ?: 'DEBUG'
+
+    inputs.property "mode", mode
+    dependsOn kotlin.targets.ios.compilations.main.linkTaskName("FRAMEWORK", mode)
+
+    from { kotlin.targets.ios.compilations.main.getBinary("FRAMEWORK", mode).parentFile }
+    into frameworkDir
+
+    doLast {
+        new File(frameworkDir, 'gradlew').with {
+            text = "#!/bin/bash\nexport 'JAVA_HOME=${System.getProperty("java.home")}'\ncd '${rootProject.rootDir}'\n./gradlew \$@\n"
+            setExecutable(true)
+        }
+    }
+}
+
+
+tasks.build.dependsOn packForXCode

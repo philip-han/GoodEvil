@@ -8,6 +8,8 @@ repositories {
     maven {
         url 'https://dl.bintray.com/kotlin/kotlinx/'
     }
+    maven { url 'https://dl.bintray.com/kotlin/ktor' }
+    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
