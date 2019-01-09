@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="false" externalProjectId=":app">
+        <sourceSets>
+          <sourceSet>Good&amp;Evil.app.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.11/4cbc5922a54376018307a731162ccaf3ef851a39/kotlin-stdlib-1.3.11.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/6f6d49396f55b91c4334a79918db4a11/jars/classes.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.12.1/dc6d02e4e68514eff5631963e28ca7742ac69efe/okhttp-3.12.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-json/1.0.1/4f2f340285c710cbd193bc458cbd1286af769ed2/ktor-client-json-1.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core/1.0.1/a2ae0c79f842d177bc9909134b84bd4c1e39e537/ktor-client-core-1.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-http/1.0.1/c3f49286d9deb83ce0a703ee91ae281a8521cee5/ktor-http-1.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils/1.0.1/b6109ded676bda75626d2b28271251e23737b959/ktor-utils-1.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-io/0.1.1/cbbd8e5674bca2efe1ec1ab2dc00ae86560f9608/kotlinx-coroutines-io-0.1.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-io/0.1.1/5fab4d47d88ec84b9958272d503941c5a3e7d3cd/kotlinx-io-0.1.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.12/eb1de5f3b800992b2b72655ef8c595b4f11ee444/atomicfu-common-0.11.12.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.0.1/679991d1b388fd9392eeb3d63b10b3f4c284f389/kotlinx-coroutines-core-common-1.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-runtime-common/0.9.1/172056fcfdc48ec0bd0b0edf807cbbf0d76b1d49/kotlinx-serialization-runtime-common-0.9.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/d8b8e746e279f1c4f5e08bc14a96b82e6bb1de02/kotlin-stdlib-common-1.3.11.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5055060fa384a88a0fed088807e8c6b9/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/10ee91926c7884f8495056f46c48be38/jars/classes.jar:/Users/philip/IdeaProjects/Good&amp;Evil/shared/build/libs/shared-jvm-0.0.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/b76e98b324ddfd12422793dd8f3e6ccd/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/95cde838f249d69368f9a81ac229486a/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/fd9753b34c1e7f21c599a00f45159aac/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/52309312568953a9d1b9290f47240fdd/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/43381b6b5d3e610eb9f35fa6f26c6075/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/757b0804a91e5e7f87da5f5c336ca025/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/54c84453cfc9dcfb422e375d1fe07e9b/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/9020570bb1ce1615303ea51d21fd1bfd/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/609b665df3d20c9cb1e0522034b489b5/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9875cbd1733fdeea7c3a62f71afceb23/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/87529be8c8b432f902a88d6f7aa2362a/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d98b709a29ddf1a3d564f5944b17febc/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/38eb98aab2dc71d3a80f5f2b21ac2d1a/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c611673822f5c446e29a76b230ac9b2/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f87ebb3a6a6d19daf3f2e8bbb249cdac/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/b22b9b2a59526eaef65b5443ed2c1a87/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/eca4a99cfd38e79abb5fad72e26be2e4/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4839b7b6785087b6dbecf83005c89225/jars/classes.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/730dbbdf4e4e45331aa3342bb4879858/jars/classes.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.15.0/bc28b5a964c8f5721eb58ee3f3c47a9bcbf4f4d8/okio-1.15.0.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a170c45e07994f40ff638cb032677768/jars/classes.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/59522485e95ff5bf4893883b00fe1fd6/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/45a55f2ce1605917340cee2164549b6c/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/aa7685436d0b7feff765225860893eda/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/43977f2e200de89c50bc4d2724d2d27e/jars/classes.jar:/Users/philip/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ca91186a35ed7af5b752139a6fdc9648/jars/classes.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/philip/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar:/Users/philip/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.11/61615dc1b4490a6a1940454da57496356067e488/kotlin-android-extensions-1.3.11.jar" />
+            </array>
+          </option>
+          <option name="multiPlatform" value="true" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":app" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+  </component>
+</module>
