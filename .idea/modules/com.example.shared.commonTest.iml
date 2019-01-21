@@ -2,7 +2,7 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="Common (experimental) " useProjectSettings="false" isTestModule="true" externalProjectId="shared">
+      <configuration version="3" platform="Common (experimental) " useProjectSettings="false" isTestModule="true" externalProjectId=":shared">
         <newMppModelJpsModuleKind>SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
         <compilerArguments>
@@ -12,7 +12,9 @@
             <array />
           </option>
           <option name="pluginClasspaths">
-            <array />
+            <array>
+              <option value="$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar" />
+            </array>
           </option>
           <option name="multiPlatform" value="true" />
         </compilerArguments>

@@ -4,9 +4,10 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
 internal actual val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default
+internal actual val UIDispatcher: CoroutineDispatcher = Dispatchers.Main
 
-/*actual fun createHttpClient(): HttpClient = HttpClient {
-        install(JsonFeature) {
-            serializer = KotlinxSerializer()
-        }
-    }*/
+//internal expect val client: HttpClient
+internal actual fun parse(json: String): GiphyApi.SearchResult {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+}
+

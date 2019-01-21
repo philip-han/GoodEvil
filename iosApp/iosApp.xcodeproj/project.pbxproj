@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4DE5D1221E693CF00A941C8 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5D1121E693CF00A941C8 /* shared.framework */; };
-		D4DE5D1321E693CF00A941C8 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5D1121E693CF00A941C8 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D44809E521E8004C00E82766 /* GiphyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44809E421E8004C00E82766 /* GiphyCell.swift */; };
+		D44809E721E93B1500E82766 /* gifSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44809E621E93B1500E82766 /* gifSupport.swift */; };
+		D44809E921E949C500E82766 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D44809E821E949C500E82766 /* Podfile */; };
+		D44809EB21E9506900E82766 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44809EA21E9506900E82766 /* SDWebImage.framework */; };
+		D44809ED21E9518D00E82766 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D44809EA21E9506900E82766 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4480A0021ECF9F100E82766 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44809FF21ECF9F100E82766 /* shared.framework */; };
+		D4480A0121ECF9F100E82766 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D44809FF21ECF9F100E82766 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E0207FA40F0085E80D /* AppDelegate.swift */; };
 		F861D7E3207FA40F0085E80D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E2207FA40F0085E80D /* ViewController.swift */; };
 		F861D7E6207FA40F0085E80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F861D7E4207FA40F0085E80D /* Main.storyboard */; };
 		F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */; };
 		F861D7F6207FA4100085E80D /* iosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7F5207FA4100085E80D /* iosAppTests.swift */; };
-		F861D80C207FA4200085E80D /* app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F861D805207FA4200085E80D /* app.framework */; };
-		F861D80D207FA4200085E80D /* app.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F861D805207FA4200085E80D /* app.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +29,6 @@
 			remoteGlobalIDString = F861D7DC207FA40F0085E80D;
 			remoteInfo = iosApp;
 		};
-		F861D80A207FA4200085E80D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F861D7D5207FA40F0085E80D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F861D804207FA4200085E80D;
-			remoteInfo = app;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,8 +38,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F861D80D207FA4200085E80D /* app.framework in Embed Frameworks */,
-				D4DE5D1321E693CF00A941C8 /* shared.framework in Embed Frameworks */,
+				D44809ED21E9518D00E82766 /* SDWebImage.framework in Embed Frameworks */,
+				D4480A0121ECF9F100E82766 /* shared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +47,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D4DE5D1121E693CF00A941C8 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
+		D44809E421E8004C00E82766 /* GiphyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyCell.swift; sourceTree = "<group>"; };
+		D44809E621E93B1500E82766 /* gifSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifSupport.swift; sourceTree = "<group>"; };
+		D44809E821E949C500E82766 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D44809EA21E9506900E82766 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = iosApp/Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		D44809FF21ECF9F100E82766 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 		F861D7DD207FA40F0085E80D /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F861D7E0207FA40F0085E80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F861D7E2207FA40F0085E80D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F861D80C207FA4200085E80D /* app.framework in Frameworks */,
-				D4DE5D1221E693CF00A941C8 /* shared.framework in Frameworks */,
+				D44809EB21E9506900E82766 /* SDWebImage.framework in Frameworks */,
+				D4480A0021ECF9F100E82766 /* shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,11 +88,12 @@
 		F861D7D4207FA40F0085E80D = {
 			isa = PBXGroup;
 			children = (
-				D4DE5D1121E693CF00A941C8 /* shared.framework */,
+				D44809FF21ECF9F100E82766 /* shared.framework */,
 				F861D813207FA4520085E80D /* app */,
 				F861D7DF207FA40F0085E80D /* iosApp */,
 				F861D7F4207FA4100085E80D /* iosAppTests */,
 				F861D7DE207FA40F0085E80D /* Products */,
+				D44809EA21E9506900E82766 /* SDWebImage.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +115,9 @@
 				F861D7E4207FA40F0085E80D /* Main.storyboard */,
 				F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */,
 				F861D7EC207FA4100085E80D /* Info.plist */,
+				D44809E421E8004C00E82766 /* GiphyCell.swift */,
+				D44809E621E93B1500E82766 /* gifSupport.swift */,
+				D44809E821E949C500E82766 /* Podfile */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -142,7 +146,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F861D80B207FA4200085E80D /* PBXTargetDependency */,
 			);
 			name = iosApp;
 			productName = iosApp;
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44809E921E949C500E82766 /* Podfile in Resources */,
 				F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */,
 				F861D7E6207FA40F0085E80D /* Main.storyboard in Resources */,
 			);
@@ -265,6 +269,8 @@
 			files = (
 				F861D7E3207FA40F0085E80D /* ViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
+				D44809E721E93B1500E82766 /* gifSupport.swift in Sources */,
+				D44809E521E8004C00E82766 /* GiphyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +289,6 @@
 			isa = PBXTargetDependency;
 			target = F861D7DC207FA40F0085E80D /* iosApp */;
 			targetProxy = F861D7F2207FA4100085E80D /* PBXContainerItemProxy */;
-		};
-		F861D80B207FA4200085E80D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F861D804207FA4200085E80D /* app */;
-			targetProxy = F861D80A207FA4200085E80D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,7 +436,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/philip/IdeaProjects/Good\\&Evil/shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/philip/IdeaProjects/Good&Evil/shared/build/xcode-frameworks",
+					"$(PROJECT_DIR)/iosApp/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,7 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/philip/IdeaProjects/Good\\&Evil/shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/philip/IdeaProjects/Good&Evil/shared/build/xcode-frameworks",
+					"$(PROJECT_DIR)/iosApp/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

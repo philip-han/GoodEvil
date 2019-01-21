@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":app">
         <sourceSets>
-          <sourceSet>Good&amp;Evil.app.iosMain</sourceSet>
           <sourceSet>Good&amp;Evil.app.commonTest</sourceSet>
           <sourceSet>Good&amp;Evil.app.commonMain</sourceSet>
+          <sourceSet>Good&amp;Evil.app.iosMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -21,7 +21,9 @@
             </array>
           </option>
           <option name="pluginClasspaths">
-            <array />
+            <array>
+              <option value="$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar" />
+            </array>
           </option>
           <option name="multiPlatform" value="true" />
         </compilerArguments>
