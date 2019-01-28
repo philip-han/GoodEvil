@@ -35,8 +35,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InR-rH-bNU">
-                                <rect key="frame" x="87" y="102" width="240" height="128"/>
+                                <rect key="frame" x="20" y="102" width="374" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vos-0p-YDy">
                                 <rect key="frame" x="0.0" y="362" width="414" height="343"/>
@@ -74,9 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="evilButton" destination="Boe-q0-PTo" id="Raq-3X-Tf4"/>
-                        <outlet property="goodButton" destination="xLg-a1-lJ2" id="JIh-F4-uTR"/>
-                        <outlet property="imageView" destination="InR-rH-bNU" id="Pmm-LQ-Lab"/>
+                        <outlet property="evilButton" destination="Boe-q0-PTo" id="vwG-sE-k2C"/>
+                        <outlet property="goodButton" destination="xLg-a1-lJ2" id="0dW-6b-mXc"/>
+                        <outlet property="imageView" destination="InR-rH-bNU" id="61P-5R-TjL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -4,8 +4,8 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":shared">
         <sourceSets>
-          <sourceSet>com.example.shared.commonMain</sourceSet>
           <sourceSet>com.example.shared.commonTest</sourceSet>
+          <sourceSet>com.example.shared.commonMain</sourceSet>
           <sourceSet>com.example.shared.iosMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>

@@ -28,7 +28,20 @@ class ViewController: UIViewController {
             for d in result.data! {
                 print("type: \(d.type) id: \(d.id) url: \(d.images.fixedWidthDownSampled.url)")
             }
-            self.imageView.sd_setImage(with: URL(string: result.data![0].url))
+            if (Thread.isMainThread) {
+                print("main thread")
+            }
+            //self.imageView.sd_setImage(with: URL(string: result.data![0].images.fixedWidthDownSampled.url))
+            let index = arc4random_uniform(UInt32(result.data!.count))
+            self.imageView.loadGif(url: result.data![Int(index)].images.fixedWidthDownSampled.url)
+            /* do {
+                if let url = URL(string: result.data![0].images.fixedWidthStill.url) {
+                    let data = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: data)
+                }
+            } catch {
+                print(error)
+            } */
             return KotlinUnit()
         }
     }
@@ -50,7 +63,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pressed(_ sender: UIButton) {
-        GiphyApi().good(callback: handler())
+        let g = GiphyApi()
+        g.good(callback: handler())
+        g.callTest()
     }
     
     @IBAction func evilPressed(_ sender: UIButton) {

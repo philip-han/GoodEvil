@@ -74,6 +74,7 @@ kotlin {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-test'
                 implementation 'org.jetbrains.kotlin:kotlin-test-junit'
+                implementation 'com.squareup.okhttp3:okhttp:3.12.1'
             }
         }
         iosMain {
